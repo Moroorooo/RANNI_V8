@@ -14,5 +14,5 @@ RUN mvn clean package
 # Copy file JAR đã build vào thư mục chạy
 RUN cp target/JMusicBot-Snapshot-All.jar JMusicBot.jar
 
-# Thiết lập lệnh chạy bot
+# Thiết lập lệnh chạy bot với biến môi trường
 CMD ["java", "-jar", "JMusicBot.jar"]
